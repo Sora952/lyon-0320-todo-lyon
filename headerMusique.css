@@ -1,0 +1,149 @@
+/* HEADER COMMUN A L'ENSEMBLE DES PAGES HTML */
+
+header {
+	background: #889e81;
+	display: flex;
+	border-bottom: 2px #e6a157 solid;
+}
+
+.navHeader {
+	width: 100%;
+	display: flex;
+}
+
+.ulHeader {
+	display: flex;
+  align-items: flex-end;
+	width: 100%;
+}
+
+.liHeader {
+	list-style: none;
+	font-family: 'Bellota', cursive;
+	color: #e5e4cc;
+	margin-left: 5%;
+}
+
+.liHeader a {
+	color: #e5e4cc;
+	text-decoration: none;
+	line-height: 20px;
+}
+
+.liHeader a:hover {
+	color: #e6a157;
+}
+
+.mainTitleHeader {
+	position: absolute;
+	left: 40%;
+	font-family: 'Pacifico', cursive;
+	color: #e6a157;
+}
+
+.couleurSousHeader {
+	background: #bac7a7;
+}
+
+.logoHeader {
+	margin-left: 10%;
+	margin-top: 5%;
+	width: 100px;
+	height: 100px;
+}
+
+/* Responsive HEADER */
+
+@media only screen and (max-width: 800px) {
+	nav .ulHeader {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.ulHeader {
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+	margin-right: 80px;
+}
+
+	header {
+		height: 200px;
+	}
+
+	main {
+		margin-top: 0
+	}
+
+	.logoHeader {
+		position: absolute;
+		margin-left: 6%;
+		margin-top: 5%;
+		width: 100px;
+		height: 100px;
+	}
+}
+
+
+
+#slogan {
+	border-radius: 10px;
+	max-width: 95%;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+  	max-height: 330px;
+  	box-shadow: 5px 5px 2px #BAC7A7;
+}
+
+.title_slogan {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	color: #e6a157;
+	font-size: 36px;
+}
+
+.parIntro {
+	font-family: 'Bellota', cursive;
+}
+
+ @font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?nt6rip');
+    src:  url('fonts/icomoon.eot?nt6rip#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?nt6rip') format('truetype'),
+      url('fonts/icomoon.woff?nt6rip') format('woff'),
+      url('fonts/icomoon.svg?nt6rip#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  /* [class^="icon-"], [class*=" icon-"] {
+    // use !important to prevent issues with browser extensions that change fonts
+    font-family: 'icomoon' !important;
+    //speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    // Better Font Rendering =========== 
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-s:before {
+    content: "\e986";
+  }
+  .icon-f:before {
+    content: "\ea90";
+  }
+  .icon-i:before {
+    content: "\ea92";
+  }
+  .icon-t:before {
+    content: "\ea96";
+  } */

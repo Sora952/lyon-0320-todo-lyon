@@ -3,18 +3,17 @@
     
     <head>
         <title>ToDoLyon</title>
-        <meta name="Description" content="Site touristique répertoriant certaines
+        <meta name="description" content="site touristique répertoriant certaines
         activités sur Lyon et ses alentours."/>
         <meta charset="UTF-8"/>
-        <meta name="authors" content="Best equip">
-        <!--<link rel="stylesheet" href="style.css" />-->
+        <meta name="authors" content="best equip">
         <link rel="stylesheet" href="MusiqueStyle.css" />
         <link href="https://fonts.googleapis.com/css?family=Bellota|Pacifico&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
     </head>
     <body>
-        <header>
+        <header id="header">
             <div>
                 <a href=#><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL"  class="logoHeader"></a>
             </div>
@@ -29,15 +28,17 @@
             </nav>
         </header>
         
-        <main>
+        <main id="main">
             
             <section>
-                <h1 class="title_slogan">Be wild, be Lyon</h2>
+                <h1 class="title_slogan">Be wild, be Lyon</h1>
                 <img id="slogan" src="https://i.imgur.com/tQ7Pepz.jpg" alt="image slogan">
+                <div class="boutonDark"><button type="button" id="jourNuit" class="activeLigth"><img src="" id="imgNuit" alt="Dark-mode" /></button></div>
             </section>
 
+
                                 <section class="MusiSectPrincipale" id="HautPage">
-                                    <div><button class="boutonHaut"><a href="#HautPage">|</a></button></div>
+                                    <div class="boutonHaut"><!--<button class="boutonHaut" type="button">--><a href="#HautPage"><img src="scrolltop.png" alt="Retourner en haut" /></a></div> 
 
                                     <aside class="MusiSectAsideSalle">
                     
@@ -65,15 +66,16 @@
                     
                         <section class="MusiSectInfoCarou">
 
-                    <!--<article class="MusiSectCarousel">
-                        <figure>
-                            <img scr="https://i.imgur.com/csELK03.png" alt="Image1" />
-                        </figure>
-                        <figure>
-                            <img src="https://i.imgur.com/csELK03.png" alt="Image2" />
-                        </figure>
-                    </article>-->
-                    <div id="slider" class="firstSectionSport">
+                            <div id="sliderTony">
+                                <button id="leftBtnTony">&larr;</button>
+                                <img src="https://picsum.photos/300?image=63" alt="">
+                                <img src="https://picsum.photos/300?image=46" alt="">
+                                <img src="https://picsum.photos/300?image=80" alt="">
+                                <img src="https://picsum.photos/300?image=102" alt="">
+                                <button id="rightBtnTony">&rarr;</button>
+                              </div>
+
+                    <div class="firstSectionSport slider">
                         <figure>
                           <a href="www.halle-tony-garnier.com"><img src="https://www.toolyon.com/wp-content/uploads/2017/03/halle-tony-garnier-lyon-1423x800.jpg"  alt></a>
                           <a href="www.halle-tony-garnier.com"><img src="https://media.lyon-france.com/1280x853/149530/671606.jpg"  alt></a>
@@ -115,22 +117,16 @@
 
                 <section class="MusiSectInfoCarouBas">
 
-                <!--<article class="MusiSectCarousel">
-                    <figure>
-                        <img scr="https://i.imgur.com/csELK03.png" alt="Image1" />
-                    </figure>
-                    <figure>
-                        <img scr="https://i.imgur.com/csELK03.png" alt="Image1" />
-                    </figure>
-                    <figure>
-                        <img scr="https://i.imgur.com/csELK03.png" alt="Image1" />
-                    </figure>
-                    <figure>
-                        <img scr="https://i.imgur.com/csELK03.png" alt="Image1" />
-                    </figure>
-                </article>-->
+                    <div id="sliderOpera">
+                        <button id="leftBtnOpera">&larr;</button>
+                        <img src="https://picsum.photos/300?image=63" alt="">
+                        <img src="https://picsum.photos/300?image=46" alt="">
+                        <img src="https://picsum.photos/300?image=80" alt="">
+                        <img src="https://picsum.photos/300?image=102" alt="">
+                        <button id="rightBtnOpera">&rarr;</button>
+                      </div>
 
-                <div id="slider" class="firstSectionSport">
+                <div class="firstSectionSport slider">
                     <figure>
                       <a href="https://www.opera-lyon.com/fr"><img src="https://www.opera-lyon.com/sites/opera-de-lyon/files/styles/home_slide_desktop/public/2017-11/op_exte%CC%81rieurOK_franchellaS.jpg?h=58ad818e&itok=iNnR8_Zk"  alt></a>
                       <a href="https://www.opera-lyon.com/fr"><img src="https://vivrelyon.net/wp-content/uploads/2019/02/OperaArchitectureFacade_Lyon_copyrightStofleth-1.jpg"  alt></a>
@@ -162,7 +158,7 @@
                
         </main>
 
-        <footer>
+        <footer id="footer" class="footer">
             <div>
                 <a href=#><img src="https://i.imgur.com/d2eEvLw.png" alt="Logo_TDL" id="logoFooter"></a>
             </div>
@@ -177,7 +173,7 @@
             </nav>
             <div id="thirdcolumn">
                 <nav id="navSocialNetworks">
-                    <h2 id="followUs" class="texteFooter">Nous suivre:</h1>
+                    <h2 id="followUs" class="texteFooter">Nous suivre:</h2>
                     <ul class="socialNetworks">
                         <li><a href="https://twitter.com" title="lien vers notre profil Twitter"><img class="twitter" src="https://www.bassin-arcachon.com/wp-content/uploads/2017/02/logo-twitter-bleu.png" alt="Logo_Twitter"></a></li>
                         <li><a href="https://facebook.com" title="lien vers notre profil Facebook"><img class="facebook" src="https://cdn.icon-icons.com/icons2/159/PNG/256/facebook_22567.png" alt="Logo_FB"></a></li>
@@ -193,21 +189,8 @@
                 </div>
             </div>
         </footer>
-    <!--<footer>
-        <nav>
-            <ul>
-                <li><a href="#" title="notre mascotte">"<img class="" src="" alt="Logo_TDL"></li>
-                <li><a href="URL_FAQ" title="FAQ"><img src="" alt="image_FAQ"></a></li> ajouter URL FAQ -->
-               <!-- <li><a href="#Categories" title="lien vers le menu">Trouver mon activité</a></li>
-                <li><a href="URL_sondage" title="lien vers le sondage">Sondage</a></li>
-                <li><a href="#" title="lien vers les mentions">Mentions légales</a></li>
-                <li><a href="https://twitter.com" title="lien vers notre profil Twitter"><img class="" src="" alt="Logo_Twitter"></a></li>
-                <li><a href="https://facebook.com" title="lien vers notre profil Facebook"><img class="" src="" alt="Logo_FB"></a></li>
-                <li><a href="https://instagram.com" title="lien vers notre profil instagram"><img class="" src="" alt="Logo_instagram"></a></li>
-            </ul>
-        </nav>
-    </footer>-->
 
+    <script src="projet.js"></script>
 </body>
 
 </html>
